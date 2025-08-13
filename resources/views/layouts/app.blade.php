@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        @stack("styles")
+    @stack('styles')
 </head>
 
 <body class="gradient-bg">
@@ -263,7 +263,7 @@
             max-width: 120px;
         }
 
-        .product-item{
+        .product-item {
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -272,7 +272,7 @@
             padding-right: 5px;
         }
 
-        .product-item .image{
+        .product-item .image {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -285,18 +285,19 @@
             background: #EFF4F8;
         }
 
-        #box-content-search li{
+        #box-content-search li {
             list-style: none;
         }
 
-        #box-content-search .product-item{
+        #box-content-search .product-item {
             margin-bottom: 10px;
         }
     </style>
     <div class="header-mobile header_sticky">
         <div class="container d-flex align-items-center h-100">
             <a class="mobile-nav-activator d-block position-relative" href="#">
-                <svg class="nav-icon" width="25" height="18" viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg">
+                <svg class="nav-icon" width="25" height="18" viewBox="0 0 25 18"
+                    xmlns="http://www.w3.org/2000/svg">
                     <use href="#icon_nav" />
                 </svg>
                 <button class="btn-close-lg position-absolute top-0 start-0 w-100"></button>
@@ -322,8 +323,8 @@
             <div class="container">
                 <form action="#" method="GET" class="search-field position-relative mt-4 mb-3">
                     <div class="position-relative">
-                        <input class="search-field__input w-100 border rounded-1" type="text" name="search-keyword"
-                            placeholder="Search products" />
+                        <input class="search-field__input w-100 border rounded-1" type="text"
+                            name="search-keyword" placeholder="Search products" />
                         <button class="btn-icon search-popup__submit pb-0 me-2" type="submit">
                             <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -346,16 +347,16 @@
                             <a href="{{ route('home.index') }}" class="navigation__link">Home</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('shop.index')}}" class="navigation__link">Shop</a>
+                            <a href="{{ route('shop.index') }}" class="navigation__link">Shop</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('cart.index')}}" class="navigation__link">Cart</a>
+                            <a href="{{ route('cart.index') }}" class="navigation__link">Cart</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('home.about.us')}}" class="navigation__link">About</a>
+                            <a href="{{ route('home.about.us') }}" class="navigation__link">About</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('home.contact')}}" class="navigation__link">Contact</a>
+                            <a href="{{ route('home.contact') }}" class="navigation__link">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -363,8 +364,8 @@
 
             <div class="border-top mt-auto pb-2">
                 <div class="customer-links container mt-4 mb-2 pb-1">
-                    <svg class="d-inline-block align-middle" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg class="d-inline-block align-middle" width="20" height="20" viewBox="0 0 20 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use href="#icon_user" />
                     </svg>
                     <span class="d-inline-block ms-2 text-uppercase align-middle fw-medium">My Account</span>
@@ -391,8 +392,8 @@
                     </li>
                     <li>
                         <a href="#" class="footer__social-link d-block">
-                            <svg class="svg-icon svg-icon_instagram" width="14" height="13" viewBox="0 0 14 13"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="svg-icon svg-icon_instagram" width="14" height="13"
+                                viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
                                 <use href="#icon_instagram" />
                             </svg>
                         </a>
@@ -408,8 +409,8 @@
                     </li>
                     <li>
                         <a href="#" class="footer__social-link d-block">
-                            <svg class="svg-icon svg-icon_pinterest" width="14" height="15" viewBox="0 0 14 15"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="svg-icon svg-icon_pinterest" width="14" height="15"
+                                viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
                                 <use href="#icon_pinterest" />
                             </svg>
                         </a>
@@ -425,7 +426,8 @@
             <div class="header-desk header-desk_type_1">
                 <div class="logo">
                     <a href="{{ route('home.index') }}">
-                        <img src="{{ asset('assets/images/logo.png') }}" alt="Uomo" class="logo__image d-block" />
+                        <img src="{{ asset('assets/images/logo.png') }}" alt="Uomo"
+                            class="logo__image d-block" />
                     </a>
                 </div>
 
@@ -435,16 +437,16 @@
                             <a href="{{ route('home.index') }}" class="navigation__link">Home</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('shop.index')}}" class="navigation__link">Shop</a>
+                            <a href="{{ route('shop.index') }}" class="navigation__link">Shop</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('cart.index')}}" class="navigation__link">Cart</a>
+                            <a href="{{ route('cart.index') }}" class="navigation__link">Cart</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('home.about.us')}}" class="navigation__link">About</a>
+                            <a href="{{ route('home.about.us') }}" class="navigation__link">About</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="{{route('home.contact')}}" class="navigation__link">Contact</a>
+                            <a href="{{ route('home.contact') }}" class="navigation__link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -453,8 +455,8 @@
                     <div class="header-tools__item hover-container">
                         <div class="js-hover__open position-relative">
                             <a class="js-search-popup search-field__actor" href="#">
-                                <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="d-block" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <use href="#icon_search" />
                                 </svg>
                                 <i class="btn-icon btn-close-lg"></i>
@@ -465,11 +467,12 @@
                             <form action="#" method="GET" class="search-field container">
                                 <p class="text-uppercase text-secondary fw-medium mb-4">What are you looking for?</p>
                                 <div class="position-relative">
-                                    <input class="search-field__input search-popup__input w-100 fw-medium" type="text"
-                                        name="search-keyword" id="search-input" placeholder="Search products" />
+                                    <input class="search-field__input search-popup__input w-100 fw-medium"
+                                        type="text" name="search-keyword" id="search-input"
+                                        placeholder="Search products" />
                                     <button class="btn-icon search-popup__submit" type="submit">
-                                        <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="d-block" width="20" height="20" viewBox="0 0 20 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <use href="#icon_search" />
                                         </svg>
                                     </button>
@@ -477,9 +480,7 @@
                                 </div>
 
                                 <div class="search-popup__results">
-                                    <ul id="box-content-search">
-
-                                    </ul>
+                                    <ul id="box-content-search"></ul>
                                 </div>
                             </form>
                         </div>
@@ -487,50 +488,55 @@
 
                     @guest
                         <div class="header-tools__item hover-container">
-                            <a href="{{ route('login')  }}" class="header-tools__item">
+                            <a href="{{ route('login') }}" class="header-tools__item">
                                 <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <use href="#icon_user" />
                                 </svg>
                             </a>
                         </div>
-                        @else
-                            <div class="header-tools__item hover-container">
-                                <a href="{{ Auth::user()->utype === 'ADM' ? route('admin.index') : route('user.index')  }}" class="header-tools__item">
-                                    <span class="pr-6px">{{ Auth::user()->name }}</span>
-                                    <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <use href="#icon_user" />
-                                    </svg>
-                                </a>
-                            </div>
                     @endguest
 
-                    <a href="{{route('wishlist.index')}}" class="header-tools__item header-tools__cart"">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    @auth
+                        <div class="header-tools__item hover-container">
+                            <a href="{{ Auth::user()->utype === 'ADM' ? route('admin.index') : route('user.index') }}"
+                                class="header-tools__item">
+                                <span class="pr-6px">{{ Auth::user()->name }}</span>
+                                <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use href="#icon_user" />
+                                </svg>
+                            </a>
+                        </div>
+                    @endauth
+
+                    <a href="{{ route('wishlist.index') }}" class="header-tools__item header-tools__cart">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <use href="#icon_heart" />
                         </svg>
-                        @if (Cart::instance('wishlist')->content()->count() > 0 )
-                            <span class="cart-amount d-block position-absolute js-cart-items-count">{{Cart::instance('wishlist')->content()->count()}}</span>
-                        
-                        
+                        @if (Cart::instance('wishlist')->content()->count() > 0)
+                            <span
+                                class="cart-amount d-block position-absolute js-cart-items-count">{{ Cart::instance('wishlist')->content()->count() }}</span>
                         @endif
                     </a>
 
-                    <a href="{{route('cart.index')}}" class="header-tools__item header-tools__cart">
+                    <a href="{{ route('cart.index') }}" class="header-tools__item header-tools__cart">
                         <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <use href="#icon_cart" />
                         </svg>
                         @if (Cart::instance('cart')->content()->count() > 0)
-                            <span class="cart-amount d-block position-absolute js-cart-items-count">{{Cart::instance('cart')->content()->count()}}</span>
+                            <span
+                                class="cart-amount d-block position-absolute js-cart-items-count">{{ Cart::instance('cart')->content()->count() }}</span>
                         @endif
                     </a>
                 </div>
             </div>
         </div>
     </header>
-    @yield("content")
+
+    @yield('content')
 
 
     <hr class="mt-5 text-secondary" />
@@ -540,42 +546,61 @@
                 <div class="footer-column footer-store-info col-12 mb-4 mb-lg-0">
                     <div class="logo">
                         <a href="{{ route('home.index') }}">
-                            <img src="{{ asset('assets/images/logo.png') }}" alt="SurfsideMedia" class="logo__image d-block" />
+                            <img src="{{ asset('assets/images/logo.png') }}" alt="SurfsideMedia"
+                                class="logo__image d-block" />
                         </a>
+                        <p>Discover the perfect pair for every occasion. From sleek formals to casual kicks, our shoes
+                            are designed to keep you comfortable and stylish all day, every day.</p>
                     </div>
-                    <p class="footer-address">123 Buddhanagar, New Baneshwor, Kathmandu</p>
-                    <p class="m-0"><strong class="fw-medium">hello@gmail.com</strong></p>
-                    <p><strong class="fw-medium">+977, 9800000000</strong></p>
 
+
+
+                </div>
+
+                <div class="footer-column footer-menu mb-4 mb-lg-0">
+                    <h6 class="sub-menu__title text-uppercase">Company</h6>
+                    <ul class="sub-menu__list list-unstyled">
+                        <li class="sub-menu__item"><a href="{{ route('home.about.us') }}"
+                                class="menu-link menu-link_us-s">About Us</a>
+                        </li>
+                        </li>
+                        <li class="sub-menu__item"><a href="{{ route('home.contact') }}"
+                                class="menu-link menu-link_us-s">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-menu mb-4 mb-lg-0">
+                    <h6 class="sub-menu__title text-uppercase">Follow Us</h6>
                     <ul class="social-links list-unstyled d-flex flex-wrap mb-0">
                         <li>
                             <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_facebook" width="9" height="15" viewBox="0 0 9 15"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-icon svg-icon_facebook" width="9" height="15"
+                                    viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
                                     <use href="#icon_facebook" />
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_twitter" width="14" height="13" viewBox="0 0 14 13"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-icon svg-icon_twitter" width="14" height="13"
+                                    viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
                                     <use href="#icon_twitter" />
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_instagram" width="14" height="13" viewBox="0 0 14 13"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-icon svg-icon_instagram" width="14" height="13"
+                                    viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
                                     <use href="#icon_instagram" />
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_youtube" width="16" height="11" viewBox="0 0 16 11"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-icon svg-icon_youtube" width="16" height="11"
+                                    viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M15.0117 1.8584C14.8477 1.20215 14.3281 0.682617 13.6992 0.518555C12.5234 0.19043 7.875 0.19043 7.875 0.19043C7.875 0.19043 3.19922 0.19043 2.02344 0.518555C1.39453 0.682617 0.875 1.20215 0.710938 1.8584C0.382812 3.00684 0.382812 5.46777 0.382812 5.46777C0.382812 5.46777 0.382812 7.90137 0.710938 9.07715C0.875 9.7334 1.39453 10.2256 2.02344 10.3896C3.19922 10.6904 7.875 10.6904 7.875 10.6904C7.875 10.6904 12.5234 10.6904 13.6992 10.3896C14.3281 10.2256 14.8477 9.7334 15.0117 9.07715C15.3398 7.90137 15.3398 5.46777 15.3398 5.46777C15.3398 5.46777 15.3398 3.00684 15.0117 1.8584ZM6.34375 7.68262V3.25293L10.2266 5.46777L6.34375 7.68262Z" />
                                 </svg>
@@ -583,8 +608,8 @@
                         </li>
                         <li>
                             <a href="#" class="footer__social-link d-block">
-                                <svg class="svg-icon svg-icon_pinterest" width="14" height="15" viewBox="0 0 14 15"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="svg-icon svg-icon_pinterest" width="14" height="15"
+                                    viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg">
                                     <use href="#icon_pinterest" />
                                 </svg>
                             </a>
@@ -593,69 +618,22 @@
                 </div>
 
                 <div class="footer-column footer-menu mb-4 mb-lg-0">
-                    <h6 class="sub-menu__title text-uppercase">Company</h6>
-                    <ul class="sub-menu__list list-unstyled">
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">About Us</a>
-                        </li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Careers</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Affiliates</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Blog</a>
-                        </li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Contact
-                                Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column footer-menu mb-4 mb-lg-0">
-                    <h6 class="sub-menu__title text-uppercase">Shop</h6>
-                    <ul class="sub-menu__list list-unstyled">
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">New
-                                Arrivals</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Accessories</a>
-                        </li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Men</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Women</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shop All</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-column footer-menu mb-4 mb-lg-0">
-                    <h6 class="sub-menu__title text-uppercase">Help</h6>
-                    <ul class="sub-menu__list list-unstyled">
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Customer Service</a>
-                        </li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">My
-                                Account</a>
-                        </li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Find a
-                                Store</a>
-                        </li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Legal & Privacy</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Gift Card</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column footer-menu mb-4 mb-lg-0">
-                    <h6 class="sub-menu__title text-uppercase">Categories</h6>
-                    <ul class="sub-menu__list list-unstyled">
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shirts</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Jeans</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shoes</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Bags</a></li>
-                        <li class="sub-menu__item"><a href="#" class="menu-link menu-link_us-s">Shop All</a></li>
-                    </ul>
+                    <h6 class="sub-menu__title text-uppercase">For More Info</h6>
+                    <p class="footer-address">123 Buddhanagar, New Baneshwor, Kathmandu</p>
+                    <p class="m-0"><strong class="fw-medium">hello@gmail.com</strong></p>
+                    <p><strong class="fw-medium">+977, 9800000000</strong></p>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <div class="container d-md-flex align-items-center">
-                <span class="footer-copyright me-auto">©{{date('Y')}} <a target="_blank" href="https://github.com/kushwahachandanbtry">Chandan Kushwaha</a></span>
+            <div class="container text-center align-items-center">
+                <span class="footer-copyright me-auto">©{{ date('Y') }} <a target="" href="#">Rupesh
+                        Prasad Kushwaha</a></span>
                 <div class="footer-settings d-md-flex align-items-center">
-                    <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms
+                    {{-- <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms
                         &amp;
-                        Conditions</a>
+                        Conditions</a> --}}
                 </div>
             </div>
         </div>
@@ -665,7 +643,8 @@
     <footer class="footer-mobile container w-100 px-5 d-md-none bg-body">
         <div class="row text-center">
             <div class="col-4">
-                <a href="{{ route('home.index') }}" class="footer-mobile__link d-flex flex-column align-items-center">
+                <a href="{{ route('home.index') }}"
+                    class="footer-mobile__link d-flex flex-column align-items-center">
                     <svg class="d-block" width="18" height="18" viewBox="0 0 18 18" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <use href="#icon_home" />
@@ -675,7 +654,8 @@
             </div>
 
             <div class="col-4">
-                <a href="{{ route('shop.index') }}" class="footer-mobile__link d-flex flex-column align-items-center">
+                <a href="{{ route('shop.index') }}"
+                    class="footer-mobile__link d-flex flex-column align-items-center">
                     <svg class="d-block" width="18" height="18" viewBox="0 0 18 18" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <use href="#icon_hanger" />
@@ -685,16 +665,16 @@
             </div>
 
             <div class="col-4">
-                <a href="{{ route('wishlist.index') }}" class="footer-mobile__link d-flex flex-column align-items-center">
+                <a href="{{ route('wishlist.index') }}"
+                    class="footer-mobile__link d-flex flex-column align-items-center">
                     <div class="position-relative">
                         <svg class="d-block" width="18" height="18" viewBox="0 0 20 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <use href="#icon_heart" />
                         </svg>
-                        @if (Cart::instance('wishlist')->content()->count() > 0 )
-                            <span class="cart-amount d-block position-absolute js-cart-items-count">{{Cart::instance('wishlist')->content()->count()}}</span>
-                        
-                        
+                        @if (Cart::instance('wishlist')->content()->count() > 0)
+                            <span
+                                class="cart-amount d-block position-absolute js-cart-items-count">{{ Cart::instance('wishlist')->content()->count() }}</span>
                         @endif
                     </div>
                     <span>Wishlist</span>
@@ -703,31 +683,33 @@
         </div>
     </footer>
 
-    
+
     <div id="scrollTop" class="visually-hidden end-0"></div>
     <div class="page-overlay"></div>
 
     <script src="{{ asset('assets/js/plugins/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/bootstrap-slider.min.js') }}"></script>
-    <script src="{{asset('js/sweetalert.min.js') }}"></script>  
+    <script src="{{ asset('js/sweetalert.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/swiper.min.js') }}"></script>
     <script src="{{ asset('assets/js/plugins/countdown.js') }}"></script>
     <script>
-        $(function(){
-            $('#search-input').on('keyup', function(){
+        $(function() {
+            $('#search-input').on('keyup', function() {
                 var searchQuery = $(this).val();
-                if(searchQuery.length > 2)
-                {
+                if (searchQuery.length > 2) {
                     $.ajax({
                         type: "GET",
-                        url: "{{route('home.search')}}",
-                        data: {query: searchQuery},
+                        url: "{{ route('home.search') }}",
+                        data: {
+                            query: searchQuery
+                        },
                         dataType: 'json',
-                        success:function(data){
+                        success: function(data) {
                             $('#box-content-search').html('');
-                            $.each(data, function(index, item){
-                                var url = "{{route('shop.product.details', ['product_slug' => 'product_slug_pls'])}}";
+                            $.each(data, function(index, item) {
+                                var url =
+                                    "{{ route('shop.product.details', ['product_slug' => 'product_slug_pls']) }}";
                                 var link = url.replace('product_slug_pls', item.slug);
 
                                 $('#box-content-search').append(`
@@ -735,7 +717,7 @@
                                         <ul>
                                             <li class="product-item gap14 mb-10">
                                                 <div class="image no-bg">
-                                                    <img src="{{asset('uploads/products/thubmnails')}}/${item.image}" alt="${item.name}">
+                                                    <img src="{{ asset('uploads/products/thubmnails') }}/${item.image}" alt="${item.name}">
                                                 </div>
                                                 <div class="flex items-center justify-between gap20 flex-grow">
                                                     <div class="name">
@@ -757,7 +739,7 @@
         });
     </script>
     <script src="{{ asset('assets/js/theme.js') }}"></script>
-    @stack("scripts")
+    @stack('scripts')
 </body>
 
 </html>
