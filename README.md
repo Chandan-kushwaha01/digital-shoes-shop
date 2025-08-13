@@ -82,5 +82,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 * Discounts & Coupons : Create and manage discount codes and promotional offers.
 
 ## Access credential
-* Admin's username :- chandan@gmail.com
-* Admin's Pass :- chandan@123
+* Admin's username :- repesh123@gmail.com
+* Admin's Pass :- rupesh@123
